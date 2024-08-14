@@ -1,0 +1,11 @@
+.about {
+  height: 80vh;
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--title-font-size);
+  color: var(--accent-color);
+  opacity: 0;
+  width: fit-content;
+}

@@ -1,0 +1,72 @@
+.main {
+  margin-bottom: 50px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 100px;
+  position: relative;
+}
+
+.title {
+  color: var(--primary-color);
+  font-size: var(--title-font-size);
+  font-weight: 600;
+  text-align: center;
+  width: 95%;
+  max-width: 600px;
+}
+
+.title > span {
+  color: var(--accent-color);
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  will-change: transform;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid gray;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.cardWraper {
+  width: 90%;
+  margin: auto;
+}
+
+.serviceTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.serviceList > ul > li {
+  list-style: decimal;
+  list-style-position: outside;
+  margin: 0.5rem 0;
+  margin-left: 15px;
+}

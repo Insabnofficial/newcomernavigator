@@ -1,0 +1,112 @@
+.footer {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top > * {
+  width: 100%;
+  min-width: 180px;
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.getStarted {
+  opacity: 0;
+}
+
+.getStarted > h3,
+.linkTitle {
+  font-size: calc(var(--font-size));
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.modal {
+  opacity: 0;
+}
+
+.modalLink {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalLink > a {
+  color: var(--secondary-color);
+  padding: 5px 0;
+  font-size: calc(var(--font-size));
+  width: fit-content;
+}
+
+.modalLink > a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.getStarted > p {
+  color: var(--secondary-color);
+  width: 90%;
+  font-size: calc(var(--font-size));
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.getStarted > div {
+  border: 1px solid var(--secondary-color);
+  padding: 10px 20px;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.getStarted > div:hover {
+  background-color: var(--accent-color);
+  color: white;
+  border: 1px solid var(--accent-color);
+  transition: all var(--transition-speed) var(--cubic-bezzier);
+  -webkit-transition: all var(--transition-speed) var(--cubic-bezzier);
+  -moz-transition: all var(--transition-speed) var(--cubic-bezzier);
+  -ms-transition: all var(--transition-speed) var(--cubic-bezzier);
+  -o-transition: all var(--transition-speed) var(--cubic-bezzier);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondary-color);
+  font-size: calc(var(--font-size) * 0.9);
+  align-items: flex-end;
+}
+
+.copyright2 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .copyright2 {
+    display: inline;
+  }
+
+  .copyright {
+    display: none;
+  }
+}
